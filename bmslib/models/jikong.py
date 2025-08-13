@@ -45,14 +45,14 @@ def _jk_command(address, value: list = ()):
 
 
 MIN_RESPONSE_SIZE = 300
-MAX_RESPONSE_SIZE = 320
+MAX_RESPONSE_SIZE = 900
 
 
 class JKBt(BtBms):
     SERVICE_UUID = "0000ffe0-0000-1000-8000-00805f9b34fb"
     CHAR_UUID = "0000ffe1-0000-1000-8000-00805f9b34fb"
 
-    TIMEOUT = 8
+    TIMEOUT = 20
 
     SOC_NOT_FULL_YET = 99.0  # when the gauge reaches 100% but no OV yet
     TEMPERATURE_STEP = 0.1
